@@ -1,0 +1,6 @@
+SQLSTATE[HY000] [1049] Unknown database 'wb4myself' (Friday, 24-06-2016 16:06:04) - Ошибка коннекта к БД
+SQLSTATE[HY000] [1049] Unknown database 'wb4myself' (Friday, 24-06-2016 16:08:44) - Ошибка коннекта к БД
+SQLSTATE[HY000] [1049] Unknown database 'wb4myself' (Friday, 24-06-2016 16:11:33) - Ошибка коннекта к БД
+SQLSTATE[HY000] [1049] Unknown database 'wb4myself' (Friday, 24-06-2016 16:13:28) - Ошибка коннекта к БД
+SQLSTATE[HY000] [1049] Unknown database 'wb4myself' (Friday, 24-06-2016 16:14:14) - Ошибка коннекта к БД
+SQLSTATE[HY000] [1045] Access denied for user ''@'localhost' (using password: NO) (Friday, 24-06-2016 17:05:25) - Ошибка коннекта к БД

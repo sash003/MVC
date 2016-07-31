@@ -1,0 +1,86 @@
+@charset "utf-8";
+/******************
+*******Typography******
+**************************/
+/*
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,300,400italic,500,700,100&subset=latin,cyrillic-ext,cyrillic);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,800,300,600,700);
+@import url(http://fonts.googleapis.com/css?family=Abel);
+*/
+header {
+  background-color: #ffffff;
+}
+#menu {
+  display: table;
+  width: 100%;
+  border-collapse: collapse;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+#menu ul {
+  display: table-row;
+  background-color: #FFFFFF;
+  list-style: none;
+}
+#menu ul li {
+  display: table-cell;
+  border: 1px solid #999999;
+}
+#menu ul li a {
+  color: #563d7c;
+  display: inline-block;
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  font-size: 1.2em;
+  text-align: center;
+}
+#menu ul li a:hover {
+  background-color: #563d7c;
+  color: #FFFFFF;
+}
+#nav_button {
+  display: none;
+  width: 50px;
+  height: 50px;
+  font-size: 2.5em;
+  line-height: 50px;
+  text-align: center;
+  background-color: #FFFFFF;
+  border: 1px solid #949494;
+  cursor: pointer;
+  color: #563d7c;
+}
+@media screen and (max-width: 600px) {
+  #menu {
+    display: inline-block;
+    position: relative;
+    width: auto;
+  }
+  #menu ul {
+    display: none;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 20;
+  }
+  #menu ul li {
+    display: list-item;
+    border-top: none;
+  }
+  #nav_button {
+    display: inline-block;
+  }
+  #menu:hover,
+  #menu.open_nav {
+    width: 100%;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -webkit-touch-callout: none;
+  }
+  #menu:hover ul,
+  #menu.open_nav ul {
+    display: block;
+  }
+}

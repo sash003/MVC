@@ -1,0 +1,42 @@
+// global variables
+@mainColor: #563d7c;
+@maincolor2: lighten(@mainColor, 33%);
+@white: lighten(@mainColor, 100%);
+
+// функции 
+/*
+lighten(color, %)
+fadeOut(color, %)
+fadeIn(color, %)
+*/
+
+*{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  outline: 0;
+  box-sizing: border-box;
+  position: relative;
+}
+
+body{
+  font-size: 17px;
+}
+
+.content{
+  padding: 33px;
+  color: @white;
+  .gradient(@mainColor, @maincolor2);
+}
+
+.gradient(@c1, @c2){
+  background-color: @c1;
+  background-image: linear-gradient(top, @c1, @c2);
+}
+
+a{
+  background: #ffffff;
+  &:hover{
+    text-decoration: none;
+  }
+}

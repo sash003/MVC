@@ -1,0 +1,43 @@
+
+<div style="white-space: pre-wrap; margin: 17px; background: #3a3c39; color: #E6DB74;">
+
+{{Вывод переменной}}
+
+Массивы
+
+Цикл
+{%for item in array%}
+
+  <li>{{item}}</li>
+  <li>{{item.category}}</li>
+  <li>{{item['id']}}</li>
+
+  {%else%}
+  UNDEFINED VAR CATEGORIES
+
+{%endfor%}
+
+IF
+{%if result%}
+  <div></div>
+  {%else%}
+  <span></span>
+{%endif%}
+
+Подшаблоны
+{%include 'main_menu.html'%}
+
+Наследование шаблонов
+// main.html
+{%block head%}
+{%endblock%}
+
+далее указываем "родителя" шаблона
+// файл main_child.html
+{%extends 'main.html'}
+
+{%block head%} // переопределяем родительский блок
+{{parent()}}
+<script type="text/javascript" src="/template/jquery/jquery.3.0.0.js"></script>
+{%endblock%}
+</div>
