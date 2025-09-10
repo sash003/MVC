@@ -1,0 +1,695 @@
+
+
+
+/*
+#49736f зелёный #3a9289 #769c75;
+#6f3700 красный
+#3f3f3f тёмный
+#444444
+#f7d40e ye
+
+Тёмный синий #02054a
+
+*/
+
+#littleMenu{
+	z-index: 999;
+}
+#menu{
+	display: inline-block;
+	position: absolute;
+	background: #49736f;
+	left: -343px;
+	transition: all 1s;
+	padding: 33px 17px;
+	border-radius: 7px 3px;
+	border-top-left-radius: 0;
+	z-index: 9999999 !important;
+}
+#menu a{
+	display: block;
+	position: relative;
+	color: white;
+	left: -222px;
+	transition: all 1s;
+	padding: 3px 11px;
+	font-weight: bold;
+	font-size: 24px;
+	font-family: 'Arial Narrow';
+}
+#openMenu{
+	position: absolute;
+	cursor: pointer;
+	transition: all 1s;
+	width: 10%;
+	top: 7px;
+	left: 7px;
+	z-index: 2;
+}
+#littleMenu{
+	display: none;
+	z-index: 3;
+}
+#menu a img{
+	height: 25px;
+	top: 4px;
+}
+
+
+/*Нижнее меню*/
+#littleMenu2{
+	z-index: 3;
+}
+#openMenu2{
+	cursor: pointer;
+	transition: all 1s;
+	height: 55px;
+	z-index: 2;
+	top: 5px;
+}
+#menu2{
+	display: inline-block;
+	position: fixed;
+	bottom: 0;
+	background: #49736f;
+	left: -444px;
+	transition: all 1s;
+	padding: 33px 17px;
+	border-top-right-radius: 15px;
+	z-index: 4;
+	text-align: left;
+}
+#menu2 a{
+	display: block;
+	position: relative;
+	color: white;
+	left: -222px;
+	transition: all 1s;
+	padding: 3px 11px;
+	font-weight: bold;
+	font-size: 44px;
+	font-family: 'Arial Narrow';
+}
+#menu2 a img{
+	height: 44px;
+	top: 4px;
+}
+
+@media (max-width: 1200px){
+	#right, #left{
+		padding: 0;
+	}
+	#book{
+		width: 84%;
+		margin: 11px auto;
+	}
+  #book h1 {
+    font-size: 27px;
+  }
+  #audioImg{
+    margin-bottom: 1em;
+    height: 190px;
+  }
+	#time{
+		font-size: 19px;
+		position: absolute;
+		right: 10px;
+	}
+	input[type="range"]{
+		width: 61%;
+	}
+	.cent2{
+		font-size: 20px;
+	}
+}
+
+
+@media (max-width: 1000px){
+  #audioImg{
+    height: 170px;
+  }
+	#time{
+		font-size: 17px;
+		position: absolute;
+		right: 10px;
+	}
+	input[type="range"]{
+		width: 57%;
+	}
+	.cent2{
+		font-size: 18px;
+	}
+}
+
+
+@media (max-width: 900px){
+
+	#bookImg{
+		height: 159px;
+	}
+	.bookTable *{
+		font-size: 27px;
+	}
+	.bookTable span{
+		font-size: 19px;
+	}
+	#content b{
+		font-size: 24px;
+	}
+	#content a{
+		font-size: 19px;
+	}
+	#head a span{
+		font-size: 20px;
+	}
+	#main h2{
+		font-size: 27px;
+	}
+  #main{
+    font-size: 19px;
+  }
+	#our_books{
+		font-size: 23px;
+	}
+	#left{
+		padding-left: 0;
+	}
+	#right{
+		padding-right: 0px;
+	}
+	#book{
+		font-size: 20px;
+		line-height: 1;
+		width: 84%;
+		margin: 11px auto;
+	}
+	.bookTable span{
+		font-size: 18px !important;
+	}
+	#book span[data-name]{
+		margin-bottom: -0.5em;
+	}
+	#book h2{
+		font-size: 25px;
+		margin-bottom: 0px;
+	}
+  #linkBooks{
+    transform: scale(0.9);
+    transform-origin: left top;
+  }
+  #book h1 {
+    font-size: 25px;
+  }
+  
+  .cent2{
+    font-size: 19px;
+  }
+  #audioImg{
+    height: 160px;
+  }
+}
+
+
+
+
+@media (max-width: 800px){
+	#head{
+		display: none;
+	}
+	.flags2{
+		display: block;
+		width: 55px;
+		top: 37px;
+		left: auto;
+		z-index: 11;
+	}
+	.flags img:first-child{
+		margin-bottom: 7px;
+	}
+	#littleMenu{
+		display: block;
+	}
+	#openMenu2{
+		width: 10%;
+		bottom: 7px;
+		left: 8px;
+		z-index: 2;
+	}
+	#menu2 a, #menu a{
+		font-size: 33px;
+	}
+	#menu2 a img{
+		height: 33px;
+	}
+	#logo {
+		margin-left: 13%;
+		top: 5px;
+	}
+	#logo img {
+		width: 18%;
+		height: auto;
+		top: 0;
+		left: 0;
+	}
+	#logo h1 {
+		font-size: 61px;
+		bottom: 20px;
+		font-weight: lighter;
+	}
+	#main{
+		width: 90%;
+		font-size: 19px;
+	}
+	*{
+		line-height: 1;
+	}
+	#citata span{
+		display: inline-block;
+		font-size: 23px;
+	}
+	#citata{
+		margin-top: 13px;
+		width: 96%;
+	}
+	#books a{
+		font-size: 25px;
+	}
+	#books .books a{
+		font-size: 23px;
+	}
+	#main h2{
+		font-size: 25px;
+	}
+	#books{
+		font-size: 20px;
+	}
+	#our_books{
+		font-size: 20px;
+	}
+	#content b {
+		font-size: 20px;
+	}
+  #linkBooks{
+    transform: scale(0.8);
+  }
+  #book h1 {
+    font-size: 23px;
+  }
+  .audioWrap{
+    display: block;
+    width: 80%;
+  }
+  audio{
+  	height: 44px;
+    top: 3px;
+  }
+  #audioImg{
+    height: 130px;
+  }
+	input[type="range"]{
+			width: 70%;
+		}
+		#time{
+			font-size: 16px;
+	}
+}
+
+
+
+
+
+@media (max-width: 700px){
+	#book{
+		width: 90%;
+		margin: 23px auto;
+		font-size: 19px;
+	}
+	#logo h1 {
+		font-size: 61px;
+		bottom: 14px;
+		font-weight: lighter;
+	}
+	#books a{
+		font-size: 23px;
+	}
+	#books .books a{
+		font-size: 21px;
+	}
+	#main h2{
+		font-size: 24px;
+	}
+  #main{
+    font-size: 19px;
+  }
+  #content b {
+    font-size: 21px;
+  }
+  #bookText, #bookText b{
+    font-size: 17px;
+  }
+  #linkBooks{
+    transform: scale(0.7);
+  }
+  #book h1 {
+    font-size: 21px;
+  }
+  #inspiration{
+    width: 80%;
+  }
+  #inspiration2 a{
+    font-size: 25px;
+  }
+  .quotes div,.quotes div *{
+    font-size: 18px;
+  }
+  .forHistory div{
+    font-size: 18px;
+  }
+  .forHistory div i{
+    font-size: 20px;
+  }
+  #audioImg{
+    height: 120px;
+  }
+	.flags2{
+		width: 55px;
+		top: 33px;
+	}
+	input[type="range"]{
+		width: 65%;
+	}
+	#time{
+		font-size: 15px;
+	}
+	#chat-body{
+		height: 200px;
+	}
+}
+
+
+
+
+
+
+@media (max-width: 600px){
+	#to_top{
+		height: 55px;
+	}  
+	#menu2 a, #menu a{
+		font-size: 22px;
+	}
+	#menu2 a img{
+		height: 23px;
+	}
+	#logo h1 {
+		font-size: 47px;
+		bottom: 12px;
+	}
+	#citata span{
+		display: inline-block;
+		line-height: 0.9;
+		font-size: 17px;
+	}
+	#citata h1{
+		font-size: 25px;
+	}
+	#citata i{
+		font-size: 17px;
+	}
+	#citata{
+
+	}
+	#books a{
+		font-size: 19px;
+		margin-left: 11px;
+	}
+	#books .books a{
+		font-size: 17px;
+	}
+	#menu{
+		padding: 21px 15px 15px 15px;
+	}
+	#menu2{
+		padding: 15px 15px;
+	}
+	#books{
+		font-size: 18px;
+	}
+	#main{
+		font-size: 16px;
+	}
+	#main h2{
+		font-size: 17px;
+	}
+	#books{
+		width: 90%;
+	}
+	#our_books{
+		font-size: 17px;
+	}
+	.bookTable span{
+		font-size: 15px;
+	}
+	#book h2{
+		font-size: 18px;
+	}
+	.bookTable b{
+    font-size: 18px;
+  }
+  #content b{
+    font-size: 19px !important;
+  }
+  #bookText, #bookText b{
+      font-size: 16px;
+    }
+	#content, #content a {
+		font-size: 17px !important;
+	}
+  #book, #book b{
+    font-size: 17px;
+  }
+  #linkBooks{
+    transform: scale(0.7);
+  }
+  #book h1 {
+    font-size: 20px;
+  }
+  #inspiration{
+    width: 90%;
+  }
+  #inspiration2 a{
+    font-size: 23px;
+  }
+  .cent2{
+    font-size: 21px;
+  }
+  .quotes div, .quotes div *{
+    font-size: 16px;
+  }
+  .forHistory div{
+    font-size: 16px;
+  }
+  .forHistory div i{
+    font-size: 17px;
+  }
+  .forHistory a{
+    font-size: 20px;
+  }
+  .forHistory{
+    margin-bottom: 5px;
+    left: 10px;
+    padding-right: 20px;
+  }
+  .audioWrap{
+    display: block;
+    width: 80%;
+  }
+  #audioImg{
+    height: 100px;
+  }
+	.flags2{
+		width: 44px;
+		top: 29px;
+	}
+	.flags img:first-child{
+		margin-bottom: 2px;
+	}
+	#openChat{
+		width: 50px;
+
+	}
+}
+
+
+
+
+
+
+@media (max-width: 500px){
+	*{
+		line-height: 1;
+	}
+	#right{
+		display: none;
+	}
+	#left{
+		width: 100%;
+	}
+	#bookImg2{
+		display: block;
+		width: 100%;
+	}
+	#citata{
+		padding: 5px;
+		padding-left: 8px;
+	}
+	#book span[data-name]{
+		margin-bottom: -0.5em;
+	}
+	#left{
+		padding: 0;
+		padding-left: 0;
+	}
+	#logo h1 {
+		font-size: 33px;
+		bottom: 12px;
+	}
+	#logo{
+		margin-left: 14.1%;
+	}
+  #book h1 {
+    font-size: 19px;
+  }
+  .cent2{
+    font-size: 19px;
+  }
+  #audioImg{
+    height: 80px;
+  }
+	.flags2{
+		width: 33px;
+		top: 22px;
+	}
+}
+
+
+
+
+
+
+@media (max-width: 400px){
+	#logo h1 {
+		font-size: 33px;
+		bottom: 10px;
+	}
+	#menu2 a, #menu a{
+		font-size: 22px;
+	}
+	#citata{
+		margin: 7px;
+		margin-top: 20px;
+	}
+	#openMenu{
+		width: 15%;
+	}
+	#logo{
+		margin-left: 20%;
+		top: 7px;
+	}
+	#logo img{
+		width: 25%;
+	}
+	#main, #main *{
+		font-size: 16px !important;
+	}
+	#main h2{
+		font-size: 17px !important;
+	}
+	#books{
+		padding-right: 7px;
+		padding-left: 0px;
+		margin: 0;
+	}
+	#books a{
+		font-size: 18px;
+		margin-left: 11px;
+	}
+	#books .books a{
+		font-size: 16px;
+		margin-left: 22px;
+	}
+	#our_books, #our_authors{
+		margin-left: 11px !important;
+	}
+	#our_books, #our_books a{
+		font-size: 15px;
+	}
+	#book span[data-name]{
+    
+	}
+	#book img:not(.chakra, #bookImg){
+		width: 100% !important;
+		height: auto !impotant;
+	}
+  #book, #book b{
+    font-size: 17px;
+  }
+	
+	#book h2{
+	  font-size: 17px;
+	}
+  #content b{
+    font-size: 19px !important;
+  }
+	#content a {
+	  font-size: 16px;
+	}
+  #bookText, #bookText b{
+    font-size: 16px !important;
+  }
+  #inspiration{
+    width: 94%;
+  }
+  #inspiration2 a{
+    font-size: 19px;
+  }
+  .forHistory{
+    margin-bottom: 5px;
+  }
+  #audioImg{
+    height: 65px;
+  }
+  .histories, .quotes, .video, .audio{
+    margin-top: 1em;
+  }
+  .video iframe{
+    width: 100%;
+    margin: auto;
+    margin-bottom: 1em;
+  }
+  .button{
+    left: 10px;
+  }
+  .wrap{
+    top: -3px;
+  }
+	.flags2{
+		width: 33px;
+		top: 22px;
+	}
+	.flags img:first-child{
+		margin-bottom: -5px;
+	}
+	input[type="range"]{
+		width: 53%;
+	}
+	#chat-body{
+		height: 300px;
+	}
+	#chat-panel{
+		width: 300px;
+	}
+}
+
+
+

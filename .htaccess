@@ -1,0 +1,70 @@
+#Установка кодировки
+AddDefaultCharset utf-8
+AddCharset utf-8 .html .css .php .txt .js
+
+php_value max_execution_time 360
+
+#ErrorDocument 404 /404.php
+
+# Редиректы с www на без www
+<IfModule mod_rewrite.c>
+Options +FollowSymLinks
+RewriteEngine on
+
+# Редирект с / на /ru
+RewriteCond %{REQUEST_URI} ^/$
+RewriteRule ^$ /ru [R=302,L]
+# Удалить завершающий слэш, если это не корень сайта и не папка/файл
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_URI} ^(.+)/$
+RewriteRule ^ %1 [R=301,L]
+
+# ТВОЙ РЕДИРЕКТ НА ГЛАВНУЮ ДЛЯ НЕСУЩЕСТВУЮЩИХ URL
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^ index.php [L]
+</IfModule>
+
+# запрещаем кэширование:
+<filesMatch "\.(pl|php|html|less|css|cgi|js|spl|scgi|fcgi|jpg|jpeg|png|gif|mp3|wav)$">
+  FileETag None
+  <ifModule mod_headers.c>
+     Header unset ETag
+     Header set Cache-Control "max-age=0, no-cache, no-store, must-revalidate"
+     Header set Pragma "no-cache"
+     Header set Expires "Wed, 11 Jan 1984 05:00:00 GMT"
+  </ifModule>
+</filesMatch>
+
+Options All -ExecCGI -Indexes -Includes +FollowSymLinks
+
+#Защищаем .htaccess файл
+<files .htaccess="">
+  order allow,deny
+  deny from all
+</files>
+# защищаем wpconfig.php
+<Files wp-config.php>
+  order allow,deny
+  deny from all
+</Files>
+<FilesMatch "\.(inc|cfg|xml)$">
+  Order allow,deny
+  Deny from all
+</FilesMatch>
+<FilesMatch ".htpasswd">
+  Order allow,deny
+  Deny from all
+</FilesMatch>
+
+# Заголовок Cache-Control
+<IfModule mod_headers.c>
+  Header append Cache-Control "no-store, no-cache, must-revalidate"
+</IfModule>
+
+# Заголовок Expires
+<IfModule mod_expires.c>
+  ExpiresActive On ExpiresDefault "now"
+</IfModule>
+
